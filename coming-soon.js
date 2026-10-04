@@ -5,6 +5,16 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  /* ---------- Email links ----------
+     The address never appears in the HTML; it is assembled here for real visitors. */
+  document.querySelectorAll(".js-email").forEach(function (a) {
+    var address = a.getAttribute("data-user") + "@" + a.getAttribute("data-domain");
+    var subject = a.getAttribute("data-subject");
+    a.href = "mailto:" + address + (subject ? "?subject=" + encodeURIComponent(subject) : "");
+    var text = a.querySelector(".js-email-text");
+    if (text) text.textContent = address;
+  });
+
   /* ---------- Build-status line ---------- */
   var statusEl = document.getElementById("status-text");
   var messages = ["routing traces", "placing components", "running diagnostics", "calibrating signals", "polishing pixels", "almost ready"];

@@ -121,6 +121,8 @@ h1 {
 .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(244, 128, 4, .45); }
 .btn:focus-visible { outline: 2px solid var(--orange-hi); outline-offset: 4px; }
 
+.nojs-email { margin: 14px 0 0; color: var(--muted); font-size: 15px; }
+
 .foot { position: relative; z-index: 3; padding: 18px 20px 26px; text-align: center; color: #6F84A3; font-size: 13px; }
 
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }

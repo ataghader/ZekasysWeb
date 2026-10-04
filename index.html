@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zekasys | Coming soon</title>
-  <meta name="description" content="Zekasys Inc. is an electronics engineering company in Ottawa, Canada. Our new website is coming soon. Contact us at info@zekasys.com.">
+  <meta name="description" content="Zekasys Inc. is an electronics engineering company in Ottawa, Canada. Our new website is coming soon.">
   <link rel="canonical" href="https://zekasys.com/">
   <meta name="theme-color" content="#050E1D">
 
@@ -74,12 +74,14 @@
         <div class="bar"><span></span></div>
       </div>
 
-      <a class="btn" href="mailto:info@zekasys.com?subject=Hello%20Zekasys">
+      <!-- The address is assembled by coming-soon.js so spam harvesters can't read it from the HTML -->
+      <a class="btn js-email" href="#" data-user="info" data-domain="zekasys.com" data-subject="Hello Zekasys">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
         </svg>
-        info@zekasys.com
+        <span class="js-email-text">Email us</span>
       </a>
+      <noscript><p class="nojs-email">info [at] zekasys [dot] com</p></noscript>
     </div>
   </main>
 
