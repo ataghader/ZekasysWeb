@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zekasys | Coming soon</title>
+  <meta name="description" content="Zekasys Inc. is an electronics engineering company in Ottawa, Canada. Our new website is coming soon. Contact us at info@zekasys.com.">
+  <link rel="canonical" href="https://zekasys.com/">
+  <meta name="theme-color" content="#050E1D">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zekasys">
+  <meta property="og:title" content="Zekasys | Coming soon">
+  <meta property="og:description" content="Electronics engineering in Ottawa, Canada. Our new website is coming soon.">
+  <meta property="og:url" content="https://zekasys.com/">
+  <meta property="og:image" content="https://zekasys.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="coming-soon.css">
+</head>
+<body>
+  <canvas class="circuit" id="circuit" aria-hidden="true"></canvas>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <main class="stage">
+    <div class="content" id="content">
+      <div class="chip-wrap" aria-hidden="true">
+        <svg class="chip" viewBox="0 0 220 220" focusable="false">
+          <defs>
+            <linearGradient id="chipFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0E3A73"/>
+              <stop offset="1" stop-color="#061F44"/>
+            </linearGradient>
+            <filter id="tipGlow" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="45"/>
+            </filter>
+          </defs>
+          <g class="pins" stroke="#fff" stroke-opacity=".5" stroke-width="5" stroke-linecap="round">
+            <path d="M68 40V22M94 40V22M126 40V22M152 40V22"/>
+            <path d="M68 180V198M94 180V198M126 180V198M152 180V198"/>
+            <path d="M40 68H22M40 94H22M40 126H22M40 152H22"/>
+            <path d="M180 68H198M180 94H198M180 126H198M180 152H198"/>
+          </g>
+          <rect class="body" x="40" y="40" width="140" height="140" rx="28" fill="url(#chipFill)" stroke="#fff" stroke-opacity=".45" stroke-width="2"/>
+          <rect class="body" x="54" y="54" width="112" height="112" rx="20" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
+          <!-- The Zekasys "Z" mark, redrawn as a vector from the icon (1254px source grid) -->
+          <g transform="translate(110 110) scale(.118) translate(-623.5 -608)">
+            <path class="tip-glow" d="M826 780H933A67 67 0 0 1 933 914H826Z" fill="#F48004" filter="url(#tipGlow)"/>
+            <path class="z-stroke" pathLength="100" d="M338 369H913L313 847H933" fill="none" stroke="#fff" stroke-width="134" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="z-tip" d="M826 780H933A67 67 0 0 1 933 914H826Z" fill="#F48004"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wordmark">
+        <img src="assets/logo-white.png" alt="Zekasys" width="360" height="47">
+      </div>
+
+      <p class="pill"><span class="live" aria-hidden="true"></span>Website under construction</p>
+      <h1>Coming <span class="grad">soon.</span></h1>
+      <p class="tagline">Electronics engineering · Ottawa, Canada</p>
+
+      <div class="status" aria-hidden="true">
+        <div class="term"><span class="prompt">&gt;</span> <span id="status-text">initializing</span><span class="cursor"></span></div>
+        <div class="bar"><span></span></div>
+      </div>
+
+      <a class="btn" href="mailto:info@zekasys.com?subject=Hello%20Zekasys">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+        </svg>
+        info@zekasys.com
+      </a>
+    </div>
+  </main>
+
+  <footer class="foot" id="foot">© <span id="year">2026</span> Zekasys Inc. · Ottawa, Ontario, Canada</footer>
+
+  <script src="coming-soon.js" defer></script>
+</body>
+</html>
